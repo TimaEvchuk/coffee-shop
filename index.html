@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="aos.css">
 	<title>Coffee Shop</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 					<li class="header__link"><a href="#">ABOUT US</a></li>
 					<img src="images/logo.svg" alt="logo" class="header__logo" style="left: -50%">
 					<li class="header__link"><a href="#">SHOP</a></li>
-					<li class="header__link"><a href="#">CONTACT</a></li>
+					<li class="header__link"><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -33,20 +34,20 @@
 				<div class="preview__body">
 
 					<div class="preview__title-links">
-						<h1 class="preview__title">THE BEST
+						<h1 class="preview__title" data-aos="fade-right">THE BEST
 							<span class="span-brown">Brazilian</span> 
 							COFFEE</h1>
-						<div class="preview__btns">
+						<div class="preview__btns" data-aos="fade-left">
 							<button class="btn-green preview__btns-top">BUY NOW</button>
 							<button class="preview__btns-bottom">VIEW MORE</button>
 						</div>
 					</div>
 
-					<div class="preview__img">
+					<div class="preview__img" data-aos="fade-up">
 						<img src="images/preview/starbucks2.png" alt="starbucks">
 					</div>
 
-					<div class="preview__info">
+					<div class="preview__info" data-aos="fade-left">
 						<h3>try the unique flavors of our coffee</h3>
 						<div class="preview__items">
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. </p>
@@ -56,10 +57,10 @@
 					</div>
 				</div>
 			</div>
-			<img src="images/background-img/bc-img2.png" alt="bc-img2" class="background-img2">
+			<img src="images/background-img/bc-img2.png" alt="bc-img2" class="background-img2" data-aos="bc-img2">
 		</section>
 		<section class="coffee-info">
-			<div class="coffee-info__container best-coffee">
+			<div class="coffee-info__container best-coffee" data-aos="fade-right">
 				<div class="coffee-info__body">
 					<div class="coffee-info__img">
 						<img src="images/coffee-info/coffee1.png" alt="coffee1">
@@ -74,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="coffee-info__container post-process">
+			<div class="coffee-info__container post-process" data-aos="fade-left">
 				<div class="coffee-info__body">
 					<div class="coffee-info__img">
 						<img src="images/coffee-info/coffee2.png" alt="coffee2">
@@ -92,8 +93,8 @@
 		</section>
 		<div class="coffee-collection">
 			<div class="coffee-collection__container">
-				<img src="images/collection/collection.png" alt="collection">
-				<div class="coffee-collection__body">
+				<img src="images/collection/collection.png" alt="collection" data-aos="fade-down" data-aos-delay="500">
+				<div class="coffee-collection__body" data-aos="fade-right">
 					<h2 class="coffee-collection__title">We are pleased to offer you an impressive range of our products</h2>
 					<p class="coffee-collection__subtitle text">You can place a wholesale order online, or contact us directly by clicking one of the buttons below</p>
 					<div class="coffee-collection__btns">
@@ -103,10 +104,10 @@
 				</div>
 			</div>
 		</div>
-		<section class="coffee-contact">
+		<section class="coffee-contact" id="contact">
 			<div class="coffee-contact__container">
 				<div class="coffee-contact__body">
-					<div class="coffee-contact__info">
+					<div class="coffee-contact__info" data-aos="fade-right" data-aos-duration="600">
 						<h2 class="coffee-contact__title">We really hope that you are interested in our <span class="span-brown">products</span></h2>
 						<p class="coffee-contact__text text">
 						To contact us, fill out the form and send us an email
@@ -114,7 +115,7 @@
 						<br>
 						We will be happy to help you with the solution of any of your questions</p>
 					</div>
-					<form class="coffee-contact__form form">
+					<form class="coffee-contact__form form" data-aos="fade-left" data-aos-duration="600">
 						<div class="form__name-email">
 							<div class="form__name">
 								<p>Name</p>
@@ -145,6 +146,7 @@
 		</section>
 
 	</div>
+	<script src="aos.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>

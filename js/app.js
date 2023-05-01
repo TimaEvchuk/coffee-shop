@@ -1,19 +1,21 @@
+AOS.init();
 let menuBtn = document.querySelector('.menu-burger'),
 		headerLogo = document.querySelector('.header__logo'),
- 		navBar = document.querySelector('.header__list');
-
-if(window.innerWidth <= 576) {
-	//headerLogo.style.transform = `translateX(${-50}%)`;
-}
+		links = document.querySelectorAll(".header__link");
+		
 let h = headerLogo.style.left;
+for(let i = 0; i < links.length; i++) {
+	links[i].addEventListener('click', () => {
+		menuBtn.classList.remove('active');
+		for(let s = 0; s < links.length; s++) {
+			links[s].classList.remove('active');
+		}
+	});
+}
 menuBtn.addEventListener('click', () => {
 	menuBtn.classList.toggle('active');
 	headerLogo.classList.toggle('active');
-	navBar.classList.toggle('active');
-	if (headerLogo.style.left == "-50%") {
-		headerLogo.style.left = "50%";
-	} else {
-		headerLogo.style.left = "-50%";
+	for(let i = 0; i < links.length; i++) {
+		links[i].classList.toggle('active');
 	}
 });
-console.log(headerLogo.style.left == "-50%");
