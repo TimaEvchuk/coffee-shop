@@ -159,16 +159,6 @@ h2 {
   }
 }
 
-/*[data-aos="bc-img2"] {
-  transform: translate(100%, 20%);
-	opacity: 0;
-  transition-property: transform, opacity;
-
-  &.aos-animate {
-    transform: translate(0%, 20%);
-		opacity: 0.85px;
-  }
-}*/
 .background-img1 {
   position: absolute;
   left: 0;
@@ -303,6 +293,9 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     padding: 21px 0 34px;
   }
 }
@@ -555,6 +548,51 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+[data-aos=btn-up] {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+[data-aos=btn-up].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+[data-aos=btn-left] {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+[data-aos=btn-left].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+[data-aos=btn-right] {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+[data-aos=btn-right].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .btn-green {
