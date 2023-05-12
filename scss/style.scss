@@ -4,7 +4,6 @@
 
 body {
 	background-color: #FFDEC0;
-	overflow-x: hidden;
 }
 
 h2 {
@@ -16,6 +15,7 @@ h2 {
 .wrapper {
 	min-height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 .global-container {
 	max-width: 1770px;

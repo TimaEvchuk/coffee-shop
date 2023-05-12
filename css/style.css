@@ -96,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #FFDEC0;
-  overflow-x: hidden;
 }
 
 h2 {
@@ -109,6 +108,7 @@ h2 {
 .wrapper {
   min-height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .global-container {
